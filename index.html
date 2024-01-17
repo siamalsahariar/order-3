@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order-details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+          <div class="customer-area">
+            <img src="flower.png" alt="Flower bouquet" class="flower">
+            <div class="customer">
+                <div class="about">
+                    <div class="title">Customer</div>
+                    <div class="name">Frederik Saugmann</div>
+                    <div class="phone">Telefon: 34 49 40 22</div>
+                </div>
+                <div class="contact">
+                    <div class="title">Delivery to</div>
+                    <div class="name">Herdis Skov</div>
+                    <div class="address">Hojvangen 25<br>
+                        2791Dragpr<br>
+                        Telefon: 34 49 40 22
+                    </div>
+                </div>
+            </div>
+          </div>
+            <span class="vertical-1"></span>
+            <div class="order">
+                <div class="title">Order information:</div>
+                <div class="name">Opreltel af:</div>
+                <div class="store">Frederik Saugmann</div>
+                <div class="number">Date: 07.04.2004</div>
+                <div class="time">Time.14:36</div>
+
+                <div class="order-details">Order#.: 12932330-1</div>
+                <div class="name">Delivery date:</div>
+                <div class="store">Saturday 13.01.2024</div>
+            </div>
+        </div>
+        <div class="product-area">
+            <div class="details">
+                <p>Product</p>
+                <p>Size</p>
+            </div>
+            <div class="describe">
+                <p>Product name</p>
+                <p>Medium</p>
+            </div>
+        </div>
+        <div class="product-details">
+            <div class="product-name">
+                <hr>
+                <p>Product price</p>
+                <p>Card price</p>
+                <hr>
+                <p>Subtotal</p>
+                <p>Delivery Cost</p>
+                <p>Total</p>
+                <hr>
+                <p>Taxes</p>
+            </div>
+            <div class="bill">
+                <hr>
+                <p class="bold">100,00 DKK</p>
+                <p class="bold">100,00 DKK</p>
+                <hr>
+                <p>100,00 DKK</p> 
+                <p>100,00 DKK</p>
+                <p class="bold">100,00 DKK</p>
+                <hr>
+                <p class="bold">100,00 DKK</p>
+            </div>
+        </div>
+        <div class="address-area">
+            <div class="address-details">
+                <h3>Text for card</h3>
+                <p> Dear Tamzid, <br> Lorem ipsum, dolor sit amet consectetur adipisicing <br> elit, sed do eitusmod tempor imcididunt ut labore et <br> dolore magna aliqua. Ut enim ad mimim veniam, quis <br> nostrud exercitation ultamco laboris nisi ut aliquip ex</p>
+                <span class = "vertical-2"></span>
+            </div>
+            <div class="address-details"></div>
+        </div>
+        <footer>
+            <div class="footer-text">
+                <p class="italic">Dear Tamzid, <br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing <br> elit, sed do eitusmod tempor imcididunt ut labore et <br> dolore magna aliqua. Ut enim ad mimim veniam, quis <br> nostrud exercitation ultamco laboris nisi ut aliquip ex
+                </p>
+                <div class="flower-logo">
+                    <img src="flower-1.png" alt="">
+                </div>
+            </div>
+            <div class="customer-side">
+                <div class="address-part">
+                    <span class="name">Herdis Skov</span> <br>Hareveanget 25<br>
+                    2791Dragor<br>
+                    Telefon: 34 49 40 22 <br>
+                    Delivery date <br>
+                    Product name<br>
+                    <span class="do">Door:X</span> <span class="nei"> Neighbour:</span>
+                    <hr>
+                </div>
+                <div class="cutomer-link">
+                    <span>Chirstians Blomster</span><br>
+                    <span>Solrod Strendvej 105,</span><br>
+                    <span>2680 Solrod Strand</span><br>
+                    <span>www.christinasblomster.dk <br> 34 49 40 22</span>
+                </div>
+            </div>
+        </footer>
+      </div>
+
+      <style type="text/css">
+        .container {
+    width: 760px;
+    height: 1430px;
+    margin: 0 auto;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border: 1px solid black;
+  }
+  
+  .header {
+    display: u;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .date {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .occasion {
+    font-style: italic;
+    font-size: 16px;
+  }
+  .customer-area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .customer-area img{
+    width: 200px;
+    height: 200px;
+  }
+  .customer{
+    margin-left: 15px;
+  }
+  .flower {
+    width: 100px;
+    height: 100px;
+  }
+  .flower-logo{
+    transform: rotate(90deg);
+    margin-left: 310px;
+  }
+  .flower-logo img{
+    margin-bottom: 50px;
+    display: block;
+  }
+  
+  .info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    position: relative;
+  }
+
+  .about, .contact, .order{
+    line-height: 1.5em;
+  }
+  
+  .title {
+    font-weight: bold;
+  }
+  
+  .customer, .receiver, .order {
+    padding: 5px;
+  }
+  .order{
+    justify-content: right;
+    justify-self: right;
+    text-align: right;
+  }
+  .product-area{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    padding: 10px;
+  }
+  .address {
+    white-space: g;
+  }
+  .contact {
+    margin-top: 10px;
+  }
+  .address-part{
+    font-size: 15px;
+  }
+  .product-name {
+    font-weight: bold;
+    line-height: 1em;
+    font-size: 16px;
+  }
+  .bill{
+    line-height: 1em;
+    font-size: 16px;
+  }
+  
+  .name {
+    font-size: px;
+  }
+  .details{
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .describe{
+    font-size: 16px;
+  }
+  .color, .description, .price {
+    white-space: pre-line;
+  }
+  .line{
+    height: 300px;
+  }
+  .message {
+    padding: 10px;
+  }
+  .product-details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+  }
+  .bill p{
+    display: grid;
+    justify-content: end;
+  }
+  .vertical-1{
+    border-left: 2px solid #000;
+    height: 200px;
+    left: 68%;
+    bottom: 0;
+    position: absolute;
+  }
+  .vertical-2{
+    border-left: 2px solid #000;
+    height: 150px;
+    left: 50%;
+    bottom: 0;
+    position: absolute;
+    margin-left: 50px;
+    margin-bottom: 10px;
+  }
+  .vertical-3{
+    border-left: 2px solid #000;
+    height: 90px;
+    right: 40%;
+    top: 42.5%;
+    bottom: 0;
+    position: absolute;
+    margin-left: 50px;
+    transform: rotate(90deg);
+    margin-bottom: 10px;
+  }
+  .order-details{
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 15px;
+  }
+  .address-area{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+  }
+  .address-details p {
+    font-size: 14px;
+    line-height: 1.3rem;
+  }
+  .text {
+    font-family: "Brush Script MT", cursive;
+    font-size: 18px;
+  }
+  .bold{
+    font-weight: bold;
+  }
+  
+  footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 1000px;
+    transform: translate(0, -50%);
+    
+
+  }
+  .footer-text{
+    display: grid;
+    position: relative;
+    line-height: 1.3em;
+    font-size: 16px;
+
+  }
+  .footer-text .italic{
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+  .logo-side p{
+    font-weight: bold;
+    font-size: 16px;
+    color: green;
+  }
+  .logo-side{
+    margin-top: 200px;
+    margin-right: 100px;
+    padding: 20px;
+    border-radius: 2px 50px 30px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+
+  }
+  .logo-side a{
+    text-decoration: none;
+    font-size: 16px;
+    color: green;
+  }
+  .logo-side img {
+    height: 40px;
+    text-align: left;
+    justify-self: end;
+    margin-top: 50px;
+  }
+  .leaf{
+    height: 50px;
+    margin-top: 335px;
+  }
+  .customer-side {
+    display: grid;
+    justify-content: end;
+    grid-template-rows: repeat(2, 1fr);
+    line-height: 1.5em;
+
+  }
+  .customer-detail{
+    margin-right: 10px;
+    margin-top: 50px;
+    font-size: 15px;
+  }
+
+  .do{
+    margin-top: 25px;
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+  .nei{
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  .cutomer-link{
+    line-height: 1.5em;
+    font-size: 15px;
+    margin-top: 25px;
+  }
+
+  .order-id{
+    margin-right: 5px;
+  }
+    </style>
+      
+</body>
+</html>
